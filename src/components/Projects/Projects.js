@@ -43,7 +43,7 @@ function Projects() {
             <ProjectCard
               imgPath={tictactoe}
               isBlog={false}
-              title="Tic-Tac-Toe"
+              title="Tic-tac-toe"
               description="It is for two players with only one computer ."
               ghLink="https://github.com/MehdiEsedov1/Tic-Tac-Toe"
             />
