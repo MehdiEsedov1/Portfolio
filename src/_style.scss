@@ -86,7 +86,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: $dark-blue !important;
+  background-color: $light-blue !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -129,17 +129,6 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
-  .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
-  }
-  .navbar-nav .nav-item a::after {
-    display: none !important;
-  }
-}
-
 .navbar-brand {
   color: #fff !important;
 }
@@ -155,12 +144,6 @@ button:focus {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
     padding: 0.8rem 1rem !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .nav-link {
-    padding: 0.7rem 1rem !important;
   }
 }
 
@@ -284,27 +267,9 @@ button:focus {
   color: $light-blue !important;
 }
 
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.75em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
-  }
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
 .myAvtar {
   justify-content: center !important;
   padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
 }
 
 .home-about-section {
@@ -409,16 +374,6 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
-}
-
-@media (max-width: 767px) {
-  .footer-copywright {
-    text-align: center !important;
-  }
-
-  .footer-body {
-    text-align: center !important;
-  }
 }
 
 .footer-icons {
@@ -562,12 +517,6 @@ button:focus {
   }
 }
 
-@media (max-width: 767px) {
-  .tech-icons {
-    margin: 10px !important;
-  }
-}
-
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -583,12 +532,6 @@ button:focus {
   list-style: none !important;
   text-align: left !important;
   padding-left: 1px !important;
-}
-
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
-  }
 }
 
 .resume-section {
@@ -611,18 +554,6 @@ button:focus {
 
 .resume-right {
   padding-left: 80px !important;
-}
-
-@media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
-
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
-  }
 }
 
 .resume {
@@ -735,5 +666,101 @@ button:focus {
 
   &::after {
     display: none !important;
+  }
+}
+
+.error-page-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  iframe {
+    width: 250px;
+    height: 250px;
+  }
+
+  p {
+    font-size: 72px;
+    font-weight: bold;
+    color: $blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 1rem 2rem !important;
+    font-size: 1.4rem !important;
+    background-color: #181a27 !important;
+  }
+  .navbar-nav .nav-item a::after {
+    display: none !important;
+  }
+
+  .nav-link {
+    padding: 0.7rem 1rem !important;
+  }
+
+  .Typewriter__wrapper {
+    font-size: 1.75em !important;
+    font-weight: 500 !important;
+    position: absolute !important;
+  }
+
+  .Typewriter__cursor {
+    display: none !important;
+  }
+
+  .myAvtar {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+  }
+
+  .footer-copywright {
+    text-align: center !important;
+  }
+
+  .footer-body {
+    text-align: center !important;
+  }
+
+  .tech-icons {
+    margin: 10px !important;
+  }
+
+  .about-img {
+    padding-top: 0 !important;
+  }
+
+  .resume-left {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .resume-right {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+
+  .error-page-container {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    iframe {
+      width: 175px;
+      height: 175px;
+    }
+
+    p {
+      font-size: 48px;
+      font-weight: bold;
+      color: $light-blue;
+    }
   }
 }

@@ -15,6 +15,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import "./_style.scss";
 import "./_app.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -38,7 +39,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="*" element={<Navigate to="/" />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </div>
     </Router>
