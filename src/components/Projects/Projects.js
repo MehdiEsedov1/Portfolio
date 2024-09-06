@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
-import chatify from "../../Assets/Projects/chatify.png";
+import Project0 from "../../Assets/Projects/Project0.png";
+import Project1 from "../../Assets/Projects/Project1.png";
 import todolist from "../../Assets/Projects/to-do-list.png";
 
 function Projects() {
@@ -13,19 +13,19 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={Project0}
               isBlog={false}
-              title="E-commerce"
-              description="This is an example E-commerce website ."
-              ghLink="https://github.com/MehdiEsedov1/E-commerce-restoran"
+              title="E-commerce (Front-end)"
+              description="An E-commerce application built with React, Redux, and Tailwind CSS. It features a modern UI, state management, and responsive design. The project provides a smooth user experience for browsing and purchasing products."
+              ghLink="https://github.com/MehdiEsedov1/E-commerce-mix"
             />
           </Col>
 
@@ -34,7 +34,7 @@ function Projects() {
               imgPath={todolist}
               isBlog={false}
               title="To-do-list"
-              description="You can use this app daily."
+              description="This is my first project where I extensively used JavaScript to interact with the DOM. The project is a simple and functional to-do list application that allows users to add, remove, and search tasks. The application is built using HTML, CSS, and JavaScript."
               ghLink="https://github.com/MehdiEsedov1/To-Do-List-Vanilla-JS"
             />
           </Col>
@@ -44,19 +44,18 @@ function Projects() {
               imgPath={tictactoe}
               isBlog={false}
               title="Tic-tac-toe"
-              description="It is for two players with only one computer ."
+              description="This is a Tic-tac-toe application built using HTML, CSS, JavaScript, and DOM manipulation. In this project, two players can play the game offline on the same computer. The application also includes a feature to start a new game, and the players' scores are saved using localStorage for persistent score tracking."
               ghLink="https://github.com/MehdiEsedov1/Tic-Tac-Toe"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={Project1}
               isBlog={false}
-              title="Inwave"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="E-commerce (Back-end)"
+              description="This project was developed in a team as part of Div Academy, using Spring, PostgreSQL, Docker, and more. It showcases the integration of backend technologies to build a robust and scalable application."
+              ghLink="https://github.com/MehdiEsedov1/E-commerce-div"
             />
           </Col>
         </Row>
