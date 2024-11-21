@@ -4,7 +4,6 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
 import Project0 from "../../Assets/Projects/Project0.png";
-import Project1 from "../../Assets/Projects/Project1.png";
 import todolist from "../../Assets/Projects/to-do-list.png";
 
 function Projects() {
@@ -23,12 +22,11 @@ function Projects() {
             <ProjectCard
               imgPath={Project0}
               isBlog={false}
-              title="E-commerce (Front-end)"
+              title="E-commerce"
               description="An E-commerce application built with React, Redux, and Tailwind CSS. It features a modern UI, state management, and responsive design. The project provides a smooth user experience for browsing and purchasing products."
               ghLink="https://github.com/MehdiEsedov1/E-commerce-mix"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={todolist}
@@ -38,7 +36,6 @@ function Projects() {
               ghLink="https://github.com/MehdiEsedov1/To-Do-List-Vanilla-JS"
             />
           </Col>
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={tictactoe}
@@ -46,16 +43,6 @@ function Projects() {
               title="Tic-tac-toe"
               description="This is a Tic-tac-toe application built using HTML, CSS, JavaScript, and DOM manipulation. In this project, two players can play the game offline on the same computer. The application also includes a feature to start a new game, and the players' scores are saved using localStorage for persistent score tracking."
               ghLink="https://github.com/MehdiEsedov1/Tic-Tac-Toe"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Project1}
-              isBlog={false}
-              title="E-commerce (Back-end)"
-              description="This project was developed in a team as part of Div Academy, using Spring, PostgreSQL, Docker, and more. It showcases the integration of backend technologies to build a robust and scalable application."
-              ghLink="https://github.com/MehdiEsedov1/E-commerce-div"
             />
           </Col>
         </Row>

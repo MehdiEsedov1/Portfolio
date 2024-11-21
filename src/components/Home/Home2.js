@@ -40,7 +40,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="blue"> React.js and Angular.js</b>
+                <b className="blue"> React.js</b>
               </i>
             </p>
           </Col>
