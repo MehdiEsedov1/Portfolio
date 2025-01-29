@@ -13,14 +13,20 @@ function ProjectCards(props) {
           <Card.Text style={{ textAlign: "justify" }}>
             {props.description}
           </Card.Text>
-          <Button variant="primary" href={!props.isPage ? props.ghLink : props.url} target="_blank">
+          <Button
+            variant="primary"
+            href={!props.isPage ? props.ghLink : props.url}
+            target="_blank"
+          >
             {!props.isPage ? (
               <>
-                <BsGithub />{"\u00A0"}GitHub
+                <BsGithub />
+                {"\u00A0"}GitHub
               </>
             ) : (
               <>
-                <CgWebsite />{"\u00A0"}Page
+                <CgWebsite />
+                {"\u00A0"}Page
               </>
             )}
           </Button>
