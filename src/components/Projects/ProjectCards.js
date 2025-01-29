@@ -8,35 +8,28 @@ function ProjectCards(props) {
   return (
     <Card className="project-card-view">
       <div>
-        <Card.Img variant="top" src={props.imgPath} alt="card-img" />
-      </div>
-      <div>
         <Card.Body>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text style={{ textAlign: "justify" }}>
             {props.description}
           </Card.Text>
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
+          <Button variant="primary" href={!props.isPage ? props.ghLink : props.url} target="_blank">
+            {!props.isPage ? (
+              <>
+                <BsGithub />{"\u00A0"}GitHub
+              </>
+            ) : (
+              <>
+                <CgWebsite />{"\u00A0"}Page
+              </>
+            )}
           </Button>
           {"\n"}
           {"\n"}
-
-          {!props.isBlog && props.demoLink && (
-            <Button
-              variant="primary"
-              href={props.demoLink}
-              target="_blank"
-              style={{ marginLeft: "10px" }}
-            >
-              <CgWebsite /> &nbsp;
-              {"Demo"}
-            </Button>
-          )}
         </Card.Body>
       </div>
     </Card>
   );
 }
+
 export default ProjectCards;

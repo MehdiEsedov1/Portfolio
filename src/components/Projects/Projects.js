@@ -1,10 +1,7 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import tictactoe from "../../Assets/Projects/tic-tac-toe.png";
-import Project0 from "../../Assets/Projects/Project0.png";
-import todolist from "../../Assets/Projects/to-do-list.png";
 
 function Projects() {
   return (
@@ -18,33 +15,24 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Project0}
-              isBlog={false}
-              title="E-commerce"
-              description="An E-commerce application built with React, Redux, and Tailwind CSS. It features a modern UI, state management, and responsive design. The project provides a smooth user experience for browsing and purchasing products."
-              ghLink="https://github.com/MehdiEsedov1/E-commerce-mix"
+              isPage={false}
+              title="Div-Academy-Final-Project"
+              description="This project was developed in a team as part of Div Academy, using Spring, PostgreSQL, Docker, and more. It showcases the integration of backend technologies to build a robust and scalable application."
+              ghLink="https://github.com/MehdiEsedov1/Div-Academy-Final-Project"
             />
-          </Col>
-          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={todolist}
-              isBlog={false}
-              title="To-do-list"
-              description="This is my first project where I extensively used JavaScript to interact with the DOM. The project is a simple and functional to-do list application that allows users to add, remove, and search tasks. The application is built using HTML, CSS, and JavaScript."
-              ghLink="https://github.com/MehdiEsedov1/To-Do-List-Vanilla-JS"
+              isPage={false}
+              title="Spring-Security"
+              description="This project demonstrates authentication and authorization using Spring Security. It includes user login functionality with username and password verification, and generates a JSON Web Token (JWT) upon successful authentication. The main goal of this project is to explore and understand the core features and configuration of Spring Security."
+              ghLink="https://github.com/MehdiEsedov1/Spring-Security"
             />
-          </Col>
-          <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={tictactoe}
-              isBlog={false}
-              title="Tic-tac-toe"
-              description="This is a Tic-tac-toe application built using HTML, CSS, JavaScript, and DOM manipulation. In this project, two players can play the game offline on the same computer. The application also includes a feature to start a new game, and the players' scores are saved using localStorage for persistent score tracking."
-              ghLink="https://github.com/MehdiEsedov1/Tic-Tac-Toe"
+              isPage={true}
+              title="Donello-az"
+              description="This is one of my projects that is in production, focusing on back-end development for an E-commerce application. The project is built using Java SE, Spring, and PostgreSQL, providing a robust back-end solution for handling e-commerce transactions and data management."
+              url="https://donello-az.com"
             />
-          </Col>
         </Row>
       </Container>
     </Container>

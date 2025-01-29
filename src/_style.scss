@@ -402,7 +402,6 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 4px 5px 3px $dark-blue !important;
   color: #fff !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
@@ -410,12 +409,13 @@ button:focus {
   height: 100% !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: space-between !important;
+  margin-bottom: 50px !important;
+  border: 1px #3a7585 solid !important;
+  border-radius: 18px !important;
 
   &:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
-    box-shadow: 0 4px 4px 5px $dark-blue !important;
   }
 }
 
