@@ -33,6 +33,12 @@ function Projects() {
             description="This is one of my projects that is in production, focusing on back-end development for an E-commerce application. The project is built using Java SE, Spring, and PostgreSQL, providing a robust back-end solution for handling e-commerce transactions and data management."
             url="https://donello-az.com"
           />
+          <ProjectCard
+            isPage={false}
+            title="MediaExtractor"
+            description="This is a Linux-based media extraction tool developed in Java and Spring Boot. It allows downloading and converting media from URLs to MP4 or MP3 formats using yt-dlp and ffmpeg, providing a lightweight and efficient back-end solution for audio/video processing."
+            ghLink="https://github.com/MehdiEsedov1/MediaExtractor"
+          />
         </Row>
       </Container>
     </Container>
