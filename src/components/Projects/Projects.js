@@ -42,7 +42,7 @@ function Projects() {
             <ProjectCard
             isPage={true}
             title="ICT Lab"
-            description="This is one of my projects currently in production, designed as a secure certificate verification system. The platform enables users to validate academic and professional certificates online. The back-end is developed using Java SE, Spring Boot, and PostgreSQL, ensuring robust data management, secure access, and reliable verification processes."
+            description="This is one of my projects currently in production, developed collaboratively with a team. The platform serves as a secure online certificate verification system, allowing users to validate academic and professional certificates issued by the university. I contributed to building the back-end using Java SE, Spring Boot, and PostgreSQL, with a focus on secure data management, efficient verification processes, and system reliability."
             url="https://ict.beu.edu.az/"
           />
         </Row>
