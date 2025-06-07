@@ -8,13 +8,10 @@ import {
 } from "react-icons/di";
 import {
   SiPostgresql,
-  SiTypescript,
   SiSpringboot,
   SiSwagger,
   SiHtml5,
   SiCss3,
-  SiDocker,
-  SiKubernetes,
 } from "react-icons/si";
 
 function Techstack() {
@@ -30,9 +27,6 @@ function Techstack() {
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiTypescript />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -43,12 +37,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiDocker />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
