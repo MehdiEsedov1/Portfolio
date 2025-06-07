@@ -39,6 +39,12 @@ function Projects() {
             description="This is one of my projects that is in production, focusing on back-end development for an E-commerce application. The project is built using Java SE, Spring, and PostgreSQL, providing a robust back-end solution for handling e-commerce transactions and data management."
             url="https://donello-az.com"
           />
+            <ProjectCard
+            isPage={true}
+            title="ICT Lab"
+            description="This is one of my projects currently in production, designed as a secure certificate verification system. The platform enables users to validate academic and professional certificates online. The back-end is developed using Java SE, Spring Boot, and PostgreSQL, ensuring robust data management, secure access, and reliable verification processes."
+            url="https://ict.beu.edu.az/"
+          />
         </Row>
       </Container>
     </Container>
