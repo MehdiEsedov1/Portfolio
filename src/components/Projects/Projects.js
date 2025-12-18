@@ -16,28 +16,34 @@ function Projects() {
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <ProjectCard
+            isPage={true}
+            title="Industry4.az Platform"
+            description="A backend system developed as part of the Industry4.az platform, implementing secure authentication, session management, caching, and robust data operations using modern Java technologies."
+            url="https://industry4.az/"
+          />
+          <ProjectCard
+            isPage={true}
+            title="BEU ICT Website"
+            description="A web platform developed for the BEU ICT Lab, involving both backend functionality and client-side interface development. Implemented dynamic content, secure data handling, and responsive UI components."
+            url="https://ict.beu.edu.az/"
+          />
+          <ProjectCard
             isPage={false}
-            title="Div-Academy-Final-Project"
-            description="This project was developed in a team as part of Div Academy, using Spring, PostgreSQL, Docker, and more. It showcases the integration of backend technologies to build a robust and scalable application."
+            title="Div Academy Final Project"
+            description="A complete backend system built during the Div Academy final phase, involving layered architecture, CRUD operations, and RESTful services."
             ghLink="https://github.com/MehdiEsedov1/Div-Academy-Final-Project"
           />
           <ProjectCard
             isPage={false}
-            title="Spring-Security"
-            description="This project demonstrates authentication and authorization using Spring Security. It includes user login functionality with username and password verification, and generates a JSON Web Token (JWT) upon successful authentication. The main goal of this project is to explore and understand the core features and configuration of Spring Security."
+            title="Spring Security Demo"
+            description="Demonstrates secure user authentication and role-based authorization using Spring Security in a typical Java backend application."
             ghLink="https://github.com/MehdiEsedov1/Spring-Security"
           />
           <ProjectCard
             isPage={false}
-            title="MediaExtractor"
-            description="This is a Linux-based media extraction tool developed in Java and Spring Boot. It allows downloading and converting media from URLs to MP4 or MP3 formats using yt-dlp and ffmpeg, providing a lightweight and efficient back-end solution for audio/video processing."
-            ghLink="https://github.com/MehdiEsedov1/MediaExtractor"
-          />
-            <ProjectCard
-            isPage={true}
-            title="Donello-az (In development)"
-            description="This is one of my projects that is in production, focusing on back-end development for an E-commerce application. The project is built using Java SE, Spring, and PostgreSQL, providing a robust back-end solution for handling e-commerce transactions and data management."
-            url="https://donello-az.com"
+            title="Media Extractor"
+            description="A utility tool that extracts and organizes metadata from image and video files using Java."
+            ghLink="https://github.com/MehdiEsedov1/Media-Extractor"
           />
         </Row>
       </Container>
